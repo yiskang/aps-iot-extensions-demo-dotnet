@@ -1,0 +1,78 @@
+{
+  "sensor": [
+    {
+      "groupName": "Level 1",
+      "location": {
+        "x": 31.92,
+        "y": 11.49,
+        "z": -12.97
+      },
+      "objectId": 4124,
+      "id": 1,
+      "name": "Living Room",
+      "code": "sensor-1",
+      "description": "Basic sensor in the middle of the living room."
+    },
+    {
+      "groupName": "Level 1",
+      "location": {
+        "x": -10.0,
+        "y": 41.64,
+        "z": -12.15
+      },
+      "objectId": 4111,
+      "id": 2,
+      "name": "Dining Table",
+      "code": "sensor-2",
+      "description": "Basic sensor at the dining table."
+    },
+    {
+      "groupName": "Level 1",
+      "location": {
+        "x": 10.0,
+        "y": 41.64,
+        "z": -12.15
+      },
+      "objectId": 4111,
+      "id": 3,
+      "name": "Kitchen",
+      "code": "sensor-3",
+      "description": "Basic sensor in the kitchen."
+    },
+    {
+      "groupName": "Level 2",
+      "location": {
+        "x": -7.46,
+        "y": 41.47,
+        "z": 2.97
+      },
+      "objectId": 4085,
+      "id": 4,
+      "name": "Bedroom",
+      "code": "sensor-4",
+      "description": "Basic sensor in the bedroom."
+    }
+  ],
+  "channel": [
+    {
+      "id": 1,
+      "code": "temp",
+      "name": "Temperature",
+      "description": "External temperature in degrees Celsius.",
+      "type": "double",
+      "unit": "°C",
+      "min": 18,
+      "max": 28
+    },
+    {
+      "id": 2,
+      "code": "co2",
+      "name": "CO₂",
+      "description": "Level of carbon dioxide.",
+      "type": "double",
+      "unit": "ppm",
+      "min": 482.81,
+      "max": 640
+    }
+  ]
+}
