@@ -19,6 +19,7 @@
 using System;
 using System.Threading.Tasks;
 using Autodesk.Forge;
+using Autodesk.Forge.Api;
 
 namespace Autodesk.Das.Models
 {
@@ -31,7 +32,7 @@ namespace Autodesk.Das.Models
 
         private async Task<Token> GetToken(Scope[] scopes)
         {
-            dynamic auth = await new TwoLeggedApi().AuthenticateAsync(_clientId, _clientSecret, "client_credentials", scopes);
+            dynamic auth = await new TwoLeggedApiV2().AuthenticateAsync(_clientId, _clientSecret, "client_credentials", scopes);
             return new Token(auth.access_token, DateTime.UtcNow.AddSeconds(auth.expires_in));
         }
 
