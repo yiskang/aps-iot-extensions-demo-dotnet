@@ -42,7 +42,7 @@ export function initViewer(container, extensions) {
 export function loadModel(viewer, urn, guid) {
     return new Promise(function (resolve, reject) {
         function onDocumentLoadSuccess(doc) {
-            const viewable = guid ? doc.getRoot().findByGuid(guid) : doc.getRoot().getDefaultGeometry();
+            const viewable = guid ? doc.getRoot().findByGuid(guid) : doc.getRoot().getDefaultGeometry(true);
             resolve(viewer.loadDocumentNode(doc, viewable));
         }
         function onDocumentLoadFailure(code, message, errors) {
